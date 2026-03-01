@@ -37,6 +37,7 @@ export const login = async (e_id: string, password: string) => {
     };
 }
 
+// 註冊
 export const signup = async (e_id: string, password: string, name: string, role: string) => {
     return await userModel.register(e_id, password, name, role)
 }
