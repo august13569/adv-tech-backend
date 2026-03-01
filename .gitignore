@@ -1,0 +1,45 @@
+# --- 依賴庫 (Dependencies) ---
+node_modules/
+jspm_packages/
+
+# --- 建置產物 (Build outputs) ---
+# TypeScript 編譯後的資料夾 (通常是 dist 或 build)
+dist/
+out/
+build/
+*.tsbuildinfo
+
+# --- 環境變數與秘密資訊 (Sensitive Data) ---
+# 非常重要！絕對不要把 .env 檔案推上去，裡面有你的 MySQL 密碼
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- 日誌檔案 (Logs) ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# --- 測試與覆蓋率 (Testing) ---
+coverage/
+.nyc_output
+
+# --- 作業系統與編輯器 (OS & IDEs) ---
+.DS_Store
+thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- 資料庫相關 (Database) ---
+# 如果你有本機測試用的 SQL dump，建議排除
+*.sql
+!migration.sql # 如果有遷移腳本則可保留
